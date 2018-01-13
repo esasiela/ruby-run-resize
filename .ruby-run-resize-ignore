@@ -1,0 +1,23 @@
+# comments begin with pound, blank lines are skipped.
+#
+# each line contains either a filename or a directory name.
+# must be the full path relative to the path provided as command line argument, including
+# the directory specified on command line.
+#
+# this ignore file does not need to be in the ruby-run-resize.rb directory, you can keep it
+# in your project or jekyll source directory.  then invoke the script from that directory
+# and it will find the file.  alternatively, put the file whereever you want and specify the -i option
+# with the full path to the ignore file
+#
+# ex: if executing the script to process the 'img-data' directory, and want to ignore 'ignore-me.jpg'...
+#
+# command line:
+# 	run-ruby-resize.rb img-data
+# ignore.txt:
+#	img-data/ignore-me.jpg
+#
+#
+
+img-data/ignore-me.jpg
+img-data/ignoreDir
+
