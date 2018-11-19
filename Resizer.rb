@@ -180,6 +180,8 @@ when we have to, and we only do it once for all the dimensions that need process
     log("resize dst [#{targetFile}] dstWidth [#{newWidth}] srcWidth [#{sourceWidth}] ratio [#{resizeRatio}]")
 
     targetImg = sourceImg.scale(resizeRatio)
+    targetImg.auto_orient!
+
 
     targetImg.write(targetFile) do |f|
       f.interlace = targetImg.interlace
